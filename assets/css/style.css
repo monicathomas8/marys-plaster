@@ -1,3 +1,15 @@
 body {
-    background-color: blue;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+#background-video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: contain;
+    z-index: -1;
 }

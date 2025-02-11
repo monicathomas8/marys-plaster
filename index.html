@@ -13,6 +13,10 @@
     <title>Mary-Homepage</title>
 </head>
 <body>
+    <video autoplay muted loop id="background-video">
+        <source src="assets/videos/vid1.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
     <header>
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
@@ -25,7 +29,8 @@
                   <a class="nav-link active" aria-current="page" href="#">Home</a>
                   <a class="nav-link" href="#">Order Now</a>
                   <a class="nav-link" href="#">About Mary</a>
-                  <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                  <a class="nav-link" href="#">Custom Orders</a>
+                  
                 </div>
               </div>
             </div>
@@ -37,7 +42,29 @@
                 <div class="row">
                     <div class="col">
                         <h1>Welcome to Mary Plaster Moldings</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit
+                        <p>Short info about you and this site</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <button type="button" class="btn btn-outline-light"><h3>See My Work</h3></button>
+                        <p>On screen work</p>
+                    </div>
+                    <div class="col">
+                        <button type="button" class="btn btn-outline-light"><h3>Order Now</h3></button>
+                        <p>link to shopify store</p>
+                    </div>
+                    <div class="col">
+                        <button type="button" class="btn btn-outline-light"><h3>My Collection</h3></button>
+                        <p>link to page with you Fav selection</p>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
     <footer>Footer</footer>
 </body>
