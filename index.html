@@ -1,71 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta> 
-    <meta>
-    <!-- PERSONAL CSS -->   
-    <link rel="stylesheet" href="assets/css/style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta />
+    <meta />
+    <!-- PERSONAL CSS -->
+    <link rel="stylesheet" href="assets/css/style.css" />
     <!-- BOOTSTRAP -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+    </script>
     <title>Mary-Homepage</title>
 </head>
+
 <body>
+    <!-- Background Video (ONLY FOR MOBILE) -->
     <video autoplay muted loop id="background-video">
         <source src="assets/videos/vid1.mp4" type="video/mp4">
         Your browser does not support the video tag.
     </video>
+
     <header>
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
-              <a class="navbar-brand" href="#">Mary Plaster Moldings</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                  <a class="nav-link active" aria-current="page" href="#">Home</a>
-                  <a class="nav-link" href="#">Order Now</a>
-                  <a class="nav-link" href="#">About Mary</a>
-                  <a class="nav-link" href="#">Custom Orders</a>
-                  
+                <a class="navbar-brand" href="#">Mary Plaster Moldings</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link" href="#">Order Now</a>
+                        <a class="nav-link" href="#">About Mary</a>
+                        <a class="nav-link" href="#">Custom Orders</a>
+                        <a class="nav-link" href="#">Get In Touch</a>
+                    </div>
                 </div>
-              </div>
             </div>
-          </nav>
+        </nav>
     </header>
+
     <main>
-        <section>
-            <div class="container">
-                <div class="row">
-                    <div class="col">
-                        <h1>Welcome to Mary Plaster Moldings</h1>
-                        <p>Short info about you and this site</p>
-                    </div>
-                </div>
+        <!-- Mobile Layout: Fullscreen Overlay -->
+        <div class="mobile-overlay">
+            <h1>Welcome to Mary Plaster Moldings</h1>
+            <p>Short info about you and this site</p>
+
+            <button type="button" class="btn btn-outline-light">
+                <h3>See My Work</h3>
+            </button>
+            <p>On screen work</p>
+
+            <button type="button" class="btn btn-outline-light">
+                <h3>Order Now</h3>
+            </button>
+            <p>Link to Shopify store</p>
+
+            <button type="button" class="btn btn-outline-light">
+                <h3>My Collection</h3>
+            </button>
+            <p>Link to your favorite selection</p>
+        </div>
+
+        <!-- Two-Column Layout for Larger Screens -->
+        <section class="container">
+            <div class="left-column">
+                <h1>Welcome to Mary Plaster Moldings</h1>
+                <p>Short info about you and this site</p>
+
+                <button type="button" class="btn btn-outline-light">
+                    <h3>See My Work</h3>
+                </button>
+                <p>On screen work</p>
+
+                <button type="button" class="btn btn-outline-light">
+                    <h3>Order Now</h3>
+                </button>
+                <p>Link to Shopify store</p>
+
+                <button type="button" class="btn btn-outline-light">
+                    <h3>My Collection</h3>
+                </button>
+                <p>Link to your favorite selection</p>
             </div>
-        </section>
-        <section>
-            <div class="container">
-                <div class="row">
-                    <div class="col">
-                        <button type="button" class="btn btn-outline-light"><h3>See My Work</h3></button>
-                        <p>On screen work</p>
-                    </div>
-                    <div class="col">
-                        <button type="button" class="btn btn-outline-light"><h3>Order Now</h3></button>
-                        <p>link to shopify store</p>
-                    </div>
-                    <div class="col">
-                        <button type="button" class="btn btn-outline-light"><h3>My Collection</h3></button>
-                        <p>link to page with you Fav selection</p>
-                    </div>
-                </div>
+
+            <div class="right-column">
+                <video autoplay muted loop>
+                    <source src="assets/videos/vid1.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
             </div>
         </section>
     </main>
-    <footer>Footer</footer>
+
+    <footer>
+        <p>© 2021 Mary Plaster Moldings</p>
+    </footer>
 </body>
+
 </html>
