@@ -369,3 +369,118 @@ footer {
     }
 }
 
+/********** Contact Form - About Page Style **********/
+/* Contact Section Layout */
+.contact-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 20px;
+    background-color: #f7e6e6; /* Soft pastel pink */
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.contact-image {
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 30px;
+}
+
+.contact-image img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    object-fit: cover;
+}
+
+/* Contact Form Styling */
+.contact-form-container {
+    width: 100%;
+    max-width: 600px;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.contact-form h2 {
+    text-align: center;
+    color: #6a0572;
+    margin-bottom: 20px;
+    font-family: 'Playfair Display', serif;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+    background: #fdfdfd;
+    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.contact-form textarea {
+    resize: vertical;
+    min-height: 150px;
+}
+
+.contact-form button {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    background: #ff69b4;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    font-family: 'Nunito', sans-serif;
+    text-transform: uppercase;
+}
+
+.contact-form button:hover {
+    background: #e0559e;
+}
+
+/* Two-Column Layout for Larger Screens */
+@media (min-width: 769px) {
+    .contact-section {
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 30px;
+    }
+
+    .contact-image {
+        width: 50%;
+        max-width: none;
+        margin-bottom: 0;
+    }
+
+    .contact-form-container {
+        width: 50%;
+    }
+}
+
+/* Adjust Image Size on Mobile Screens */
+@media (max-width: 768px) {
+    .contact-image {
+        width: 80%;
+        margin: 0 auto 20px auto;
+    }
+
+    .contact-image img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+}

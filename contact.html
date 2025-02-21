@@ -9,7 +9,8 @@
     <!-- GOOGLE FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <!-- PERSONAL CSS -->
     <link rel="stylesheet" href="assets/css/style.css" />
     <!-- BOOTSTRAP -->
@@ -34,10 +35,9 @@
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav">
                         <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                        <a class="nav-link" href="order.html">Order Now</a>
                         <a class="nav-link" href="about.html">About Mary</a>
-                        <a class="nav-link" href="customorders.html">Custom Orders</a>
-                        <a class="nav-link" href="contact.html">Get In Touch</a>
+                        <a class="nav-link" href="order.html">Order Now</a>
+                        <a class="nav-link" href="contact.html">Custom Orders</a>
                     </div>
                 </div>
             </div>
@@ -45,11 +45,33 @@
     </header>
 
     <main>
-      
+        <!-- Contact Section with Image -->
+<div class="contact-section">
+    <div class="contact-image">
+        <img src="assets/images/mary2.jpg" alt="Contact Image">
+    </div>
+    <div class="contact-form-container">
+        <h1>Get In Touch</h1>
+        <p>Have a question or want to place a custom order? Send me a message!</p>
+         <!-- Contact Form with Getform Integration -->
+         <form action="https://getform.io/f/bgdppnoa" method="POST" class="contact-form">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <input type="text" name="_gotcha" style="display:none">
+            <input type="hidden" name="_cc" value="marymplaster@gmail.com">
+            <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+    </div>
+</div>
+
+       
+
     </main>
 
     <footer>
         <p>© 2025 Mary Plaster Mouldings</p>
+        <a class="nav-link" href="contact.html">Get In Touch</a>
     </footer>
 </body>
 
