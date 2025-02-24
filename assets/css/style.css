@@ -369,6 +369,76 @@ footer {
     }
 }
 
+/* Achievements Banner Styles */
+.achievements-banner {
+    background-color: #f7e6e6; /* Soft pastel pink */
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.achievements-banner h2 {
+    color: #6a0572; /* Deep purple for contrast */
+    margin-bottom: 30px;
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+}
+
+.achievements-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.achievement-item {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.achievement-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.achievement-item p {
+    margin-top: 10px;
+    font-size: 1.1rem;
+    color: #333;
+}
+
+.achievement-item:hover {
+    transform: translateY(-5px);
+}
+
+/* Carousel Effect for Mobile */
+@media (max-width: 768px) {
+    .achievements-grid {
+        display: flex;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        gap: 15px;
+        padding-bottom: 15px;
+    }
+
+    .achievement-item {
+        flex: 0 0 80%;
+        scroll-snap-align: center;
+    }
+
+    .achievement-item img {
+        height: 150px;
+    }
+}
+
 /********** Contact Form - About Page Style **********/
 /* Contact Section Layout */
 .contact-section {
@@ -484,3 +554,5 @@ footer {
         border-radius: 10px;
     }
 }
+
+
